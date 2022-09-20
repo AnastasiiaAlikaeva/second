@@ -28,14 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // closeButton
+            // 
+            this.closeButton.Location = new System.Drawing.Point(368, 123);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(159, 58);
+            this.closeButton.TabIndex = 0;
+            this.closeButton.Text = "Закрыть";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGreen;
+            this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(908, 306);
+            this.Controls.Add(this.closeButton);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
@@ -45,6 +57,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button closeButton;
     }
 }
 
